@@ -1,38 +1,96 @@
-.App {
+.app {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+}
+
+.welcome {
+  height: 15vh;
+  width: 100%;
   text-align: center;
+  padding-top: 10px;
+  background-color: #168aad;
+  color: #fff;
+  font-size: 2rem;
+  border-bottom: 3px solid #b5e48c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainPage {
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  background-color: #34a0a4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.mainPage input {
+  height: 10%;
+  width: 40%;
+  margin: 20px 0;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  padding-left: 10px;
+  transition: all 1s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainPage input:focus {
+  width: 60%;
+  cursor: text;
+  border: 2px solid #b5e48c;
+  border-radius: 10px;
+}
+
+.mainPage button {
+  height: 10%;
+  width: 20%;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  border: 4px solid #b5e48c;
+  background-color: #99d98c;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.mainPage button:hover {
+  cursor: pointer;
+  background-color: #d9ed92;
+  border-radius: 15px;
+}
+
+.output {
+  height: 55%;
+  width: 90%;
+  margin-top: 5%;
+  border: 4px solid #b5e48c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+}
+
+.output .analyze {
+  text-align: left;
+  border-right: 2px solid #b5e48c;
+  padding: 10px;
+  width: 50%;
+}
+
+.output .styles {
+  text-align: left;
+  padding: 10px;
+  width: 50%;
+}
+
+.footer {
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  background-color: #184e77;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px;
 }
